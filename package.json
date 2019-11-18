@@ -1,7 +1,7 @@
 {
   "name": "tamagotchi",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project was completed as an in-class assignment for the Intermediate JavaScript class at Epicodus, during a week focused on Asynchrony and APIs. The task description was as follows:",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
