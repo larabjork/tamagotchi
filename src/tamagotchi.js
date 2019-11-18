@@ -48,4 +48,12 @@ export class Pet {
     }, 5000);
   };
 
+  gameStatus() {
+    if(this.feedLevel === 0 && this.playLevel === 0 && this.sleepLevel === 0) {
+      return false
+    } else {
+      return true
+    };
+  }
+
 }

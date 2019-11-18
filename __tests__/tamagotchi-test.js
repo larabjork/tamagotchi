@@ -67,5 +67,16 @@ describe('Katya', () => {
     expect(pet.feedLevel).toEqual(4);
   });
 
+//test 8
+  test('should end game when all levels = 0', () => {
+    pet.feedLevel = 0;
+    pet.playLevel = 0;
+    pet.sleepLevel = 0;
+    expect(pet.feedLevel).toEqual(0);
+    expect(pet.playLevel).toEqual(0);
+    expect(pet.sleepLevel).toEqual(0);
+    expect(pet.gameStatus()).toBe(false);
+  });
+
 
 });
