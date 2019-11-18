@@ -30,4 +30,22 @@ export class Pet {
     };
   }
 
+  playTimer() {
+    setInterval( () => {
+      this.playLevel--;
+    }, 10000);
+  };
+
+  sleepTimer() {
+    setInterval( () => {
+      this.sleepLevel--;
+    }, 10000);
+  };
+
+  feedTimer() {
+    setInterval( () => {
+      this.feedLevel--;
+    }, 5000);
+  };
+
 }
