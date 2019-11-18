@@ -11,7 +11,7 @@ export class Pet {
       this.feedLevel -= 1;
       this.playLevel += 1;
       this.sleepLevel -= 1;
-    };
+    }
   }
 
   clickSleep() {
@@ -19,7 +19,7 @@ export class Pet {
       this.feedLevel -= 3;
       this.playLevel -= 3;
       this.sleepLevel += 1;
-    };
+    }
   }
 
   clickFeed() {
@@ -27,33 +27,33 @@ export class Pet {
       this.feedLevel += 1;
       this.playLevel -= 1;
       this.sleepLevel -= 1;
-    };
+    }
   }
 
   playTimer() {
     setInterval( () => {
       this.playLevel--;
     }, 10000);
-  };
+  }
 
   sleepTimer() {
     setInterval( () => {
       this.sleepLevel--;
     }, 10000);
-  };
+  }
 
   feedTimer() {
     setInterval( () => {
       this.feedLevel--;
     }, 5000);
-  };
+  }
 
   gameStatus() {
     if(this.feedLevel === 0 && this.playLevel === 0 && this.sleepLevel === 0) {
-      return false
+      return false;
     } else {
-      return true
-    };
+      return true;
+    }
   }
 
 }
