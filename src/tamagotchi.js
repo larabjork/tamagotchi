@@ -6,6 +6,28 @@ export class Pet {
     this.sleepLevel = 5;
   }
 
-  
+  clickPlay() {
+    if (this.playLevel < 10) {
+      this.feedLevel -= 1;
+      this.playLevel += 1;
+      this.sleepLevel -= 1;
+    };
+  }
+
+  clickSleep() {
+    if (this.sleepLevel < 10) {
+      this.feedLevel -= 3;
+      this.playLevel -= 3;
+      this.sleepLevel += 1;
+    };
+  }
+
+  clickFeed() {
+    if (this.feedLevel < 10) {
+      this.feedLevel += 1;
+      this.playLevel -= 1;
+      this.sleepLevel -= 1;
+    };
+  }
 
 }
