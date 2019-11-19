@@ -8,10 +8,13 @@ $(document).ready(function() {
   const newPet = new Pet ();
   $('#start-form').submit(function(event) {
     event.preventDefault();
-    // const inputtedName = $('#name').val();
-    // $('#name').val("");
+    const inputtedName = $('#choose-name').val();
+    $('#choose-name').val("");
+
+    $("#pet-name").html(inputtedName);
 
     $('#game-play').show();
+    $('#name-display').show();
     $('#start').hide();
 
     setInterval( () => {

@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Alata|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Tamagotchi</title>
   </head>
   <body>
     <div class="container">
       <div id="header">
-        <h1>Tamagotchi<span id="pet-name"></span></h1>
+        <h1>Tamagotchi <span id="x"> X</span><span id="treme">TREME</span> </h1>
+      </div>
+      <div id="name-display">
+        <h4>Take care of <span id="pet-name"></span>! </h4>
       </div>
       <div id="start">
         <form id="start-form">
           <div class="">
-            <label for="name">Choose a name for your new pet!</label>
+            <label for="choose-name">Choose a name for your new pet!</label>
             <br>
-            <input id="name">
+            <input id="choose-name">
           </div>
           <br>
           <button type="submit" name="button">Name me!</button>

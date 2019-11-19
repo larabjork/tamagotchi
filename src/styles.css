@@ -1,7 +1,10 @@
-/* #game-play, #end {
+#game-play, #end {
   display: none;
-} */
+}
 
+#name-display {
+  display: none;
+}
 
 body {
   background-color: #6A4C93;
@@ -35,4 +38,17 @@ button {
 
 #hunger, #fun, #energy {
   text-align: center;
+}
+
+#x, #treme {
+  font-family: 'Permanent Marker', cursive;
+  color: #FF595E;
+}
+
+#x {
+  font-size: 100px;
+  vertical-align: sub;
+}
+#treme {
+  font-size: 56px;
 }
