@@ -11,10 +11,11 @@
       <div id="header">
         <h1>Tamagotchi <span id="x"> X</span><span id="treme">TREME</span> </h1>
       </div>
-      <div id="name-display">
-        <h4>Take care of <span id="pet-name"></span>! </h4>
-      </div>
       <div id="start">
+        <div id="name-display">
+          <h4><span class="pet-name"></span> is ready! </h4>
+          <br>
+        </div>
         <form id="start-form">
           <div class="">
             <label for="choose-name">Choose a name for your new pet!</label>
@@ -54,7 +55,11 @@
         </div>
       </div>
       <div id="end">
-
+        <div id="death-display">
+          <h4><span class="pet-name"></span> has died! </h4>
+          <br>
+        </div>
+        <button type="button" name="button" id="restart-button">Play again!</button>
       </div>
     </div>
   </body>
