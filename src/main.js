@@ -32,5 +32,9 @@ $(document).ready(function() {
       newPet.clickSleep();
     });
 
+    newPet.playTimer();
+    newPet.sleepTimer();
+    newPet.feedTimer();
+
   });
 });
