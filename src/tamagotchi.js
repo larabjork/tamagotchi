@@ -6,11 +6,24 @@ export class Pet {
     this.sleepLevel = 5;
   }
 
+  resetNegative() {
+    if (this.feedLevel < 0) {
+      this.feedLevel = 0;
+    }
+    if (this.playLevel < 0) {
+      this.playLevel = 0;
+    }
+    if (this.sleepLevel < 0) {
+      this.sleepLevel = 0;
+    }
+  }
+
   clickPlay() {
     if (this.playLevel < 10) {
       this.feedLevel -= 1;
       this.playLevel += 1;
       this.sleepLevel -= 1;
+      this.resetNegative();
     }
   }
 
@@ -19,6 +32,7 @@ export class Pet {
       this.feedLevel -= 3;
       this.playLevel -= 3;
       this.sleepLevel += 1;
+      this.resetNegative();
     }
   }
 
@@ -27,24 +41,28 @@ export class Pet {
       this.feedLevel += 1;
       this.playLevel -= 1;
       this.sleepLevel -= 1;
+      this.resetNegative();
     }
   }
 
   playTimer() {
     setInterval( () => {
       this.playLevel--;
+      this.resetNegative();
     }, 10000);
   }
 
   sleepTimer() {
     setInterval( () => {
       this.sleepLevel--;
+      this.resetNegative();
     }, 10000);
   }
 
   feedTimer() {
     setInterval( () => {
       this.feedLevel--;
+      this.resetNegative();
     }, 5000);
   }
 
