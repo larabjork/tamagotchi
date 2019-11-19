@@ -78,5 +78,15 @@ describe('Katya', () => {
     expect(pet.gameStatus()).toBe(false);
   });
 
+//test 9
+  test ('should reset value to 0 if negative number is reached', () => {
+    pet.feedLevel = -2;
+    pet.playLevel = -3;
+    pet.sleepLevel = -1;
+    pet.resetNegative();
+    expect(pet.feedLevel).toEqual(0);
+    expect(pet.playLevel).toEqual(0);
+    expect(pet.sleepLevel).toEqual(0);
+  });
 
 });

@@ -32,5 +32,13 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larabjork/tamagotchi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/larabjork/tamagotchi/issues"
+  },
+  "homepage": "https://github.com/larabjork/tamagotchi#readme"
 }
