@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Lobster&display=swap" rel="stylesheet">
     <title>Tamagotchi</title>
   </head>
   <body>
@@ -13,8 +14,10 @@
         <form id="start-form">
           <div class="">
             <label for="name">Choose a name for your new pet!</label>
+            <br>
             <input id="name">
           </div>
+          <br>
           <button type="submit" name="button">Name me!</button>
         </form>
       </div>
@@ -22,20 +25,23 @@
         <div class="">
 
         </div>
-        <div id="counters">
-          <div id="hunger">
+        <div id="counters" class="row">
+          <div id="hunger" class="col-md-4">
+            <h2>Hunger:</h2>
             <div id="hunger-counter">
 
             </div>
             <button id="hunger-button">Feed me!</button>
           </div>
-          <div id="fun">
+          <div id="fun" class="col-md-4">
+            <h2>Fun:</h2>
             <div id="fun-counter">
 
             </div>
             <button id="fun-button">Let's play!</button>
           </div>
-          <div id="energy">
+          <div id="energy" class="col-md-4">
+            <h2>Energy:</h2>
             <div id="energy-counter">
 
             </div>

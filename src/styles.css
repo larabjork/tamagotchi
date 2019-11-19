@@ -1,3 +1,38 @@
-#game-play, #end {
+/* #game-play, #end {
   display: none;
+} */
+
+
+body {
+  background-color: #6A4C93;
+}
+
+h1 {
+  /* font-family: 'Alata', sans-serif; */
+  font-family: 'Lobster', cursive;
+  color: #FFCA3A;
+  font-size: 56px;
+}
+
+label {
+  font-family: 'Alata', sans-serif;
+  color: white;
+}
+
+button {
+  font-family: 'Alata', sans-serif;
+  background-color: #FF595E;
+  color: white;
+  border-radius: 2.5px;
+  border-color: #FF595E;
+}
+
+#counters {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 28px;
+}
+
+#hunger, #fun, #energy {
+  text-align: center;
 }
