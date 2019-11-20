@@ -13,6 +13,26 @@ $(document).ready(function() {
     const inputtedName = $('#choose-name').val();
     $('#choose-name').val("");
 
+    var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=${process.env.API_KEY}&limit=5`);
+    xhr.done(function(data) { console.log("success got data", data); });
+
+    // let request = new XMLHttpRequest();
+    // const url = `http://api.giphy.com/v1/gifs/IMfi5ugpf3W1y/&api_key=${process.env.API_KEY}`;
+
+    xhr.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        let response = JSON.parse(this.responseText);
+        getElements(response);
+      }
+    };
+
+    // xhr.open("GET", url, true);
+    // xhr.send();
+
+    const getElements = function(response) {
+    $('.showRyan').html(`Ryan's picture goes here: ${response.data.url}`);
+    };
+
     $(".pet-name").html(inputtedName);
 
     $('#game-play').show();
