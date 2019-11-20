@@ -12,26 +12,23 @@ $(document).ready(function() {
     event.preventDefault();
     const inputtedName = $('#choose-name').val();
     $('#choose-name').val("");
-    //
-    // var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=${process.env.API_KEY}&limit=5`);
-    // xhr.done(function(data) { console.log("success got data", data); });
 
-    // let request = new XMLHttpRequest();
-    // const url = `http://api.giphy.com/v1/gifs/IMfi5ugpf3W1y/&api_key=${process.env.API_KEY}`;
+    let request = new XMLHttpRequest();
+   const url = `ttps://media2.giphy.com/media/IMfi5ugpf3W1y/giphy.gif?cid=fbae6a30166fe662a1c667475689e7ee6817f9b22053f3c6&rid=giphy.gif&api_key=${process.env.API_KEY}&limit1`;
 
-    // xhr.onreadystatechange = function() {
-    //   if (this.readyState === 4 && this.status === 200) {
-    //     let response = JSON.parse(this.responseText);
-    //     getElements(response);
-    //   }
-    // };
+   request.onreadystatechange = function() {
+     if (this.readyState === 4 && this.status === 200) {
+       const response = JSON.parse(this.responseText);
+       getElements(response);
+     }
+   }
 
-    // xhr.open("GET", url, true);
-    // xhr.send();
+   request.open("GET", url, true);
+   request.send();
 
-    // const getElements = function(response) {
-    // $('.showRyan').html(`Ryan's picture goes here: ${response.data.url}`);
-    // };
+  const getElements = function(response) {
+    $("#fun").attm(response.url)
+  }
 
     $(".pet-name").html(inputtedName);
 
