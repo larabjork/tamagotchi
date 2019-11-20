@@ -54,7 +54,7 @@ Project was written using Google Chrome; no other browsers were tested for compa
 2. After cloning the project locally, you can run **npm install -y** to download the necessary dependencies. You can then run **npm run build** to bundle your version of this project. If something doesn't display correctly or goes wrong somehow, please contact us at <jonathan.salfen@gmail.com> and <lara.m.bjork@gmail.com> and we will do our best to troubleshoot for you.
 
 ###Known Issues and Limitations
-* INSERT AS APPROPRIATE
+* No known bugs.
 
 ###License
 This software is licensed under the MIT license.
